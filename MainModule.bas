@@ -1,7 +1,11 @@
 Attribute VB_Name = "MainModule"
 Option Explicit
 
-Public Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
+#If VBA7 Then
+    Public Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds&)
+#Else
+    Public Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds&)
+#End If
 
 Dim maxThreads%, nTasks%, wsThreads As Worksheet
 Dim threads() As New thread
