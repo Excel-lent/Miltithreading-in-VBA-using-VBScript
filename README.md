@@ -1,5 +1,5 @@
 # Multithreading in VBA using VBScript.
-This repository is based on an article "[Multithreading VBA using VBscript](https://analystcave.com/excel-multithreading-in-vba-using-vbscript/)". I tried to do multithreading VBA more clear and structured. The main idea of the method is pretty simple: the VBScript can be executed from VBA and the communication between started VBScript and VBA is accomplished via Excel cells. The communication between VBScript and VBA is necessary becaause we need to know when the VBScript task is finished and to obtain the results of its execution.
+This repository is based on an article "[Multithreading VBA using VBscript](https://analystcave.com/excel-multithreading-in-vba-using-vbscript/)". I tried to do multithreading VBA more clear and structured. The main idea of the method is pretty simple: the VBScript can be executed from VBA and the communication between started VBScript and VBA is accomplished via Excel cells. The communication between VBScript and VBA is necessary because we need to know when the VBScript task is finished and to obtain the results of its execution.
 
 The code consist of three parts:
 1. The main VBA module with two functions:

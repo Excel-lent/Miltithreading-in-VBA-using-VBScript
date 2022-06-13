@@ -1,3 +1,5 @@
+Option Explicit
+
 ' Following arguments are used:
 ' 0 - Workbook name
 ' 1 - Worksheet name
